@@ -1,0 +1,69 @@
+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
+
+mkdir gitone
+cd gitone
+gitone touch one.txt
+gitone touch two.txt
+gitone mkdir myFolder
+cd myFolder
+myFolder touch three.txt
+cd 
+git init
+git clone 'git_file_address"
+git status
+git add -all # for staging all
+git add -A # for staging all
+git add . #work only current directory
+git add * # for staging all except deleted item
+git commit -m "comment"
+git reset --hard # create deleted file
+git rm --cached two.txt
+git rm -r folder 
+--branching & merging --
+git branch development
+git checkout development
+--development main merger --
+git merge main -m "comment" #from development
+git checkout main
+git merge development # from main
+git push origin main
+git checkout staging
+git fetch
+git merge
+git pull 
+git log 
+git reset
+git spash
+git rebase -i "comment id"
+
+
+//linux git credential clear command
+
+$ git config credential.helper store
+
+//setting git credential in linux
+gh config set
+
+
+//git remove origin
+git remote show origin    
+git remote rm origin    
+git add .    
+git commit -m "First commit"    
+git remote add origin Copied_origin_url    
+git remote show origin   
+git push origin master
+
+
+//The problem is that you are not tracking the files locally but identical files are tracked remotely so in order to "pull" your system //would be forced to overwrite the local files which are not version controlled.
+
+//Try running
+
+git add *
+git stash
+git pull
+
+// This will track all files, remove all of your local changes to those files, and then get the files from the server.
+
+
+
